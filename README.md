@@ -2,13 +2,6 @@
 This is simple class that create file cache without using database, or any memcached.
 
 ## How-To
-####Attributes
-'''php
-	private $FILE     = "";
-    private $PATH     = "";
-    private $Filepath = "";
-'''
-
 ####Methods
 #####constructor($filename[, $path])
 Class constructor required $filename to instantiate class which will use this value to create cache file name corresponding to parameter.
