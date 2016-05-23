@@ -10,7 +10,7 @@ class WorFileCache
         $this->FILE     = $filename . '.txt';
         $this->Filepath = $this->PATH . '/' . $this->FILE;
     }
-    public function isCacheFolderExist()
+    private function isCacheFolderExist()
     {
         $path = $this->PATH;
         if (!file_exists($path) && !is_dir($path)) {
@@ -24,7 +24,7 @@ class WorFileCache
         }
         return true;
     }
-    public function readCache()
+    private function readCache()
     {
         $path = $this->Filepath;
         //echo $path;
