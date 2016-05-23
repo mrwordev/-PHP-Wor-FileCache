@@ -10,7 +10,7 @@ This is simple class that create file cache without using database, or any memca
 '''
 
 ####Methods
-	constructor($filename[, $path])
+#####constructor($filename[, $path])
 Class constructor required $filename to instantiate class which will use this value to create cache file name corresponding to parameter.
 ```php
 	$cache = new WorFileCache("Test");
@@ -23,7 +23,7 @@ $path is optional, depend on your system to using this parameter. Path is relate
 ```
 This will result in createing folder CacheFolder then store Test.txt inside.
 
-	setCache($key, $value)
+#####setCache($key, $value)
 Create new cache in "Key to value" format. Data will store inside file that create during instantiate object.
 ```php
 	$cache = new WorFileCache("Test");
@@ -31,7 +31,7 @@ Create new cache in "Key to value" format. Data will store inside file that crea
 ```
 This will result in cache information stored in file Test.txt. Mapped by key name "User" with value "Wor" in it.
 
-	getCache($key)
+#####getCache($key)
 Retrieving data from cache with given key. If key is not set empty "" will be return.
 ```php
 	$cache = new WorFileCache("Test");
